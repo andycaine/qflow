@@ -1,3 +1,4 @@
+<#import "/spring.ftl" as spring/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +9,11 @@
 <body>
 <div class="container-fluid">
     <h1>Add a new queue</h1>
-    <form>
+    <form action="" method="post">
         <fieldset>
             <legend>New queue</legend>
             <label>Name</label>
-            <input id="name" name="name" type="text" placeholder="Queue name" >
+            <@spring.formInput "queue.name" "type='text' placeholder='Queue name'" />
             <button type="submit" class="btn">Submit</button>
         </fieldset>
     </form>
