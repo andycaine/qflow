@@ -1,3 +1,4 @@
+<#-- @ftlvariable name="queues" type="java.util.Collection<Queue>" -->
 <#import "../templates.ftl" as templates/>
 
 <@templates.page "Queues">
