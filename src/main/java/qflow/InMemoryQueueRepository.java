@@ -1,5 +1,6 @@
 package qflow;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,5 +14,10 @@ public class InMemoryQueueRepository implements QueueRepository {
     public void store(Queue queue) {
         queue.setId(nextId++);
         queues.put(queue.getId(), queue);
+    }
+
+    @Override
+    public Collection<Queue> findAll() {
+        return queues.values();
     }
 }

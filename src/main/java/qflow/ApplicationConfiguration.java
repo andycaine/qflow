@@ -11,14 +11,4 @@ public class ApplicationConfiguration {
         return new InMemoryQueueRepository();
     }
 
-    @Bean
-    public QueueService queueService() {
-        return new QueueServiceImpl(queueRepository());
-    }
-
-    @Bean
-    public QueueServiceFacade queueServiceFacade() {
-        return new QueueServiceFacadeImpl(queueService());
-    }
-
 }

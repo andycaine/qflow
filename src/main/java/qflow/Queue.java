@@ -6,10 +6,6 @@ public class Queue {
 
     private String name;
 
-    public Queue(String name) {
-        this.name = name;
-    }
-
     public Long getId() {
         return id;
     }
@@ -22,4 +18,7 @@ public class Queue {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 }

@@ -1,14 +1,7 @@
 <#import "/spring.ftl" as spring/>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Add a new queue</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-</head>
-<body>
-<div class="container-fluid">
-    <h1>Add a new queue</h1>
+<#import "../templates.ftl" as templates/>
+
+<@templates.page "Add a new queue">
     <form action="" method="post">
         <fieldset>
             <legend>New queue</legend>
@@ -17,8 +10,4 @@
             <button type="submit" class="btn">Submit</button>
         </fieldset>
     </form>
-</div>
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="/static/bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>
+</@templates.page>
