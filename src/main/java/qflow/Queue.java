@@ -1,18 +1,13 @@
 package qflow;
 
-public class Queue {
+import java.util.ArrayList;
+import java.util.List;
 
-    private Long id;
+public class Queue extends Entity {
 
     private String name;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private List<Item> items = new ArrayList<Item>();
 
     public String getName() {
         return name;
@@ -20,5 +15,13 @@ public class Queue {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void addItem(Item item) {
+        this.items.add(item);
+    }
+
+    public List<Item> getItems() {
+        return items;
     }
 }

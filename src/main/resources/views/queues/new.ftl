@@ -7,7 +7,7 @@
             <legend>New queue</legend>
             <label>Name</label>
             <@spring.formInput "queue.name" "type='text' placeholder='Queue name'" />
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn btn-primary">Save</button>
         </fieldset>
     </form>
 </@templates.page>

@@ -8,6 +8,11 @@
     </head>
     <body>
     <div class="container-fluid">
+        <ul class="nav nav-tabs">
+            <li>
+                <a id="nav-link-queues" href="/queues">Queues</a>
+            </li>
+        </ul>
         <h1>${title}</h1>
         <#nested />
     </div>

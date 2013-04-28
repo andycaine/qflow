@@ -12,12 +12,13 @@
         <tbody>
             <#list queues as queue>
             <tr class="queue">
-                <td class="name">${queue.name}</td>
+                <td class="name"><a href="/queues/${queue.id}/items">${queue.name}</a></td>
             </tr>
             </#list>
         </tbody>
     </table>
     <#else >
-        <p>You don't have any queues.  Create one <a href="/queues/new">here</a></p>
+        <p>You don't have any queues.</p>
     </#if>
+    <a id="new-queue-btn" class="btn btn-primary" href="/queues/new"><i class="icon-plus"></i> New Queue</a>
 </@templates.page>

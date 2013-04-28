@@ -32,7 +32,7 @@ public class QueueController {
         if (errors.hasErrors()) {
             return NEW_VIEW;
         }
-        queueRepository.store(queue);
+        queueRepository.save(queue);
         return "redirect:/queues";
     }
 

@@ -20,6 +20,7 @@ dependencies {
   compile 'org.springframework:spring-webmvc:3.2.2.RELEASE'
   compile 'org.springframework:spring-context-support:3.2.2.RELEASE'
   compile 'org.freemarker:freemarker:2.3.19'
+  compile 'com.google.guava:guava:14.0.1'
   testCompile 'junit:junit-dep:4.11'
   testCompile 'org.mockito:mockito-core:1.9.5'
   testCompile 'org.mockito:mockito-core:1.9.5'
